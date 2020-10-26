@@ -183,7 +183,7 @@ nlu:
     - I want to talk to someone
     - supervisor
 
-- intent: give_name
+- intent: inform_name
   examples: |
     - Laurence
     - Lauren
