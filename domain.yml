@@ -38,6 +38,39 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_check:
+  - text: "Yes, you have a plan."
+
+  utter_change:
+  - text: "Okay, let's change it."
+
+  utter_add_phone:
+  - text: "Let's add a phone."
+
+  utter_new_phone:
+  - text: "We're gonna get you an iPhone."
+
+  utter_change_address:
+  - text: "Remind me to get your address."
+
+  utter_change_email:
+  - text: "I'll get a new email address from you."
+
+  utter_support:
+  - text: "Depends on what kind of support you need."
+
+  utter_help:
+  - text: "Do you really need help?"
+
+  utter_name:
+  - text: "Hi there!"
+
+  utter_anything_else:
+  - text: "Is there anything else I can help with?"
+
+  utter_how_can_i_help:
+  - text: "How can I help you today?"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

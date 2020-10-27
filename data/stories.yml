@@ -2,29 +2,41 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: greet and help
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - action: utter_how_can_i_help
 
-- story: sad path 1
+- story: check plan, happy, nothing else
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
+  - intent: check_plan
+  - action: utter_check
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+  - action: utter_anything_else
+  - intent: deny
+  - action: goodbye
 
-- story: sad path 2
+- story: check plan, happy, something else
+  steps:
+  - intent: check_plan
+  - action: utter_check
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_how_can_i_help
+
+- story: check plan, not happy
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
+  - action: utter_how_can_i_help
+  - intent: check_plan
+  - action: utter_check
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_goodbye
+  - action: utter_how_can_i_help
