@@ -1,0 +1,160 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: check_plan
+  examples: |
+    - what plan do I have?
+    - how many minutes do I have?
+    - what does my plan look like?
+    - what is included in my service?
+    - can you check my plan?
+    - do I have nights and weekends?
+    - what service do I have?
+    - what is on my bill?
+
+- intent: change_plan
+  examples: |
+    - I need a new plan
+    - new plan
+    - new service
+    - I'd like to change my plan
+    - change plan
+    - change service
+    - I'd like to change my service
+
+- intent: add_phone
+  examples: |
+    - add phone to plan
+    - add phone
+    - additional phone
+    - add to plan
+    - new line
+    - additional line
+
+- intent: new_phone
+  examples: |
+    - upgrade my phone
+    - I need a new phone
+    - new iPhone
+    - I lost my phone
+    - I need a newer phone
+    - new phone
+    - updated phone
+    - update phone
+
+- intent: change_address
+  examples: |
+    - I moved
+    - I need to change my address
+    - change address
+    - update my address
+    - update address
+    - wrong address
+    - not receiving bills
+    - I'm not receiving mail
+    - I'm not receiving bills
+
+- intent: change_email
+  examples: |
+    - I'd like to change my email
+    - change email
+    - change e-mail
+    - I'd like to change my e-mail
+    - new email
+    - new e-mail
+
+- intent: support
+  examples: |
+    - I don't know how to use my phone
+    - phone help
+    - phone not working
+    - phone support
+    - phone is broken
+    - phone won't turn on
+    - phone doesn't work
+    - dropping calls
+    - dropped calls
+    - change SIM card
+    - change SIM
+    - new SIM card
+    - new SIM
+    - broken screen
+    - shattered screen
+    - screen doesn't work
+    - can't hear on my phone
+    - can't complete calls
+
+- intent: help
+  examples: |
+    - help!
+    - please help
+    - operator
+    - need help
+    - I want to talk to someone
+    - supervisor
+
+- intent: inform_name
+  examples: |
+    - Laurence
+    - Lauren
+    - Kristen
+    - Frankie
+    - Bob Dobalina
+    - Bob Stephenson Jeff
+    - Bob

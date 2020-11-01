@@ -5,26 +5,17 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
-  - check_plan
-  - change_plan
-  - add_phone
-  - new_phone
-  - change_address
-  - change_email
+  - plan_maintenance
+  - phone_maintenance
+  - change_info
   - support
   - help
   - inform_name
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Hey! I am an assistant that can help you with your account."
 
   utter_did_that_help:
   - text: "Did that help you?"

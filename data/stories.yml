@@ -10,7 +10,7 @@ stories:
 
 - story: check plan, happy, nothing else
   steps:
-  - intent: check_plan
+  - intent: plan_maintenance
   - action: utter_check
   - action: utter_did_that_help
   - intent: affirm
@@ -21,7 +21,7 @@ stories:
 
 - story: check plan, happy, something else
   steps:
-  - intent: check_plan
+  - intent: plan_maintenance
   - action: utter_check
   - action: utter_did_that_help
   - intent: affirm
@@ -35,7 +35,7 @@ stories:
   - intent: greet
   - action: utter_greet
   - action: utter_how_can_i_help
-  - intent: check_plan
+  - intent: plan_maintenance
   - action: utter_check
   - action: utter_did_that_help
   - intent: deny

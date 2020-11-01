@@ -50,40 +50,6 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -91,67 +57,57 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: check_plan
+- intent: plan_maintenance
   examples: |
-    - what plan do I have?
-    - how many minutes do I have?
-    - what does my plan look like?
-    - what is included in my service?
-    - can you check my plan?
-    - do I have nights and weekends?
-    - what service do I have?
-    - what is on my bill?
+    - [what plan]("entity": "plan", "role" "view_plan") do I have?
+    - [how many minutes]("entity": "plan", "role" "view_plan") do I have?
+    - what does my [plan look like]("entity": "plan", "role" "view_plan")?
+    - what is [included in my service]("entity": "plan", "role" "view_plan")?
+    - can you [check my plan]("entity": "plan", "role" "view_plan")?
+    - [what service]("entity": "plan", "role" "view_plan") do I have?
+    - I need a [new plan]("entity": "plan", "role" "edit_plan")
+    - [new plan]("entity": "plan", "role" "edit_plan")
+    - [new service]("entity": "plan", "role" "edit_plan")
+    - I'd like to [change my plan]("entity": "plan", "role" "edit_plan")
+    - [change plan]("entity": "plan", "role" "edit_plan")
+    - [change service]("entity": "plan", "role" "edit_plan")
+    - I'd like to [change my service]("entity": "plan", "role" "edit_plan")
 
-- intent: change_plan
+- intent: phone_maintenance
   examples: |
-    - I need a new plan
-    - new plan
-    - new service
-    - I'd like to change my plan
-    - change plan
-    - change service
-    - I'd like to change my service
+    - [add phone]("entity": "phone", "role" "add_line") to plan
+    - [add phone]("entity": "phone", "role" "add_line")
+    - [additional phone]("entity": "phone", "role" "add_line")
+    - [add to plan]("entity": "phone", "role" "add_line")
+    - [new line]("entity": "phone", "role" "add_line")
+    - [additional line]("entity": "phone", "role" "add_line")
+    - [upgrade my phone]("entity": "phone", "role" "upgrade_existing")
+    - I need a [new phone]("entity": "phone", "role" "upgrade_existing")
+    - [new iPhone]("entity": "phone", "role" "upgrade_existing")
+    - I [lost my phone]("entity": "phone", "role" "upgrade_existing")
+    - [lost phone]("entity": "phone", "role" "upgrade_existing")
+    - I need a [newer phone]("entity": "phone", "role" "upgrade_existing")
+    - [updated phone]("entity": "phone", "role" "upgrade_existing")
+    - [update phone]("entity": "phone", "role" "upgrade_existing")
+    - [upgrade phone]("entity": "phone", "role" "upgrade_existing")
 
-- intent: add_phone
+- intent: change_info
   examples: |
-    - add phone to plan
-    - add phone
-    - additional phone
-    - add to plan
-    - new line
-    - additional line
-
-- intent: new_phone
-  examples: |
-    - upgrade my phone
-    - I need a new phone
-    - new iPhone
-    - I lost my phone
-    - I need a newer phone
-    - new phone
-    - updated phone
-    - update phone
-
-- intent: change_address
-  examples: |
-    - I moved
-    - I need to change my address
-    - change address
-    - update my address
-    - update address
-    - wrong address
-    - not receiving bills
-    - I'm not receiving mail
-    - I'm not receiving bills
-
-- intent: change_email
-  examples: |
-    - I'd like to change my email
-    - change email
-    - change e-mail
-    - I'd like to change my e-mail
-    - new email
-    - new e-mail
+    - I [moved]("entity": "new_contact_info", "role" "address")
+    - I need to [change my address]("entity": "new_contact_info", "role" "address")
+    - [change address]("entity": "new_contact_info", "role" "address")
+    - [update my address]("entity": "new_contact_info", "role" "address")
+    - [update address]("entity": "new_contact_info", "role" "address")
+    - [wrong address]("entity": "new_contact_info", "role" "address")
+    - [not receiving bills]("entity": "new_contact_info", "role" "address")
+    - I'm [not receiving mail]("entity": "new_contact_info", "role" "address")
+    - I'm [not receiving bills]("entity": "new_contact_info", "role" "address")
+    - I'd like to [change my email]("entity": "new_contact_info", "role" "email")
+    - [change email]("entity": "new_contact_info", "role" "address")
+    - [change e-mail]("entity": "new_contact_info", "role" "address")
+    - I'd like to [change my e-mail]("entity": "new_contact_info", "role" "address")
+    - [new email]("entity": "new_contact_info", "role" "address")
+    - [new e-mail]("entity": "new_contact_info", "role" "address")
 
 - intent: support
   examples: |
@@ -185,10 +141,10 @@ nlu:
 
 - intent: inform_name
   examples: |
-    - Laurence
-    - Lauren
-    - Kristen
-    - Frankie
-    - Bob Dobalina
-    - Bob Stephenson Jeff
-    - Bob
+    - My name is [Laurence](name)
+    - [Lauren](name)
+    - I am [Kristen](name)
+    - [Frankie](name)
+    - [Bob Dobalina](name)
+    - [Bob Stephenson Jeff](name)
+    - [Bob](name)
