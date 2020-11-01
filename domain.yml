@@ -6,12 +6,20 @@ intents:
   - affirm
   - deny
   - bot_challenge
-  - plan_maintenance
-  - phone_maintenance
+  - plan_maintenance:
+      use_entities: ["plan"]
+  - phone_maintenance:
+      use_entities: ["phone"]
   - change_info
   - support
   - help
   - inform_name
+
+entities:
+  - plan
+  - phone
+  - new_contact_info
+  - name
 
 responses:
   utter_greet:

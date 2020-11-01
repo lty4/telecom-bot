@@ -59,55 +59,55 @@ nlu:
 
 - intent: plan_maintenance
   examples: |
-    - [what plan]("entity": "plan", "role" "view_plan") do I have?
-    - [how many minutes]("entity": "plan", "role" "view_plan") do I have?
-    - what does my [plan look like]("entity": "plan", "role" "view_plan")?
-    - what is [included in my service]("entity": "plan", "role" "view_plan")?
-    - can you [check my plan]("entity": "plan", "role" "view_plan")?
-    - [what service]("entity": "plan", "role" "view_plan") do I have?
-    - I need a [new plan]("entity": "plan", "role" "edit_plan")
-    - [new plan]("entity": "plan", "role" "edit_plan")
-    - [new service]("entity": "plan", "role" "edit_plan")
-    - I'd like to [change my plan]("entity": "plan", "role" "edit_plan")
-    - [change plan]("entity": "plan", "role" "edit_plan")
-    - [change service]("entity": "plan", "role" "edit_plan")
-    - I'd like to [change my service]("entity": "plan", "role" "edit_plan")
+    - [what plan]{"entity": "plan", "role":"view_plan"} do I have?
+    - [how many minutes]{"entity": "plan", "role":"view_plan"} do I have?
+    - what does my [plan look like]{"entity": "plan", "role":"view_plan"}?
+    - what is [included in my service]{"entity": "plan", "role":"view_plan"}?
+    - can you [check my plan]{"entity": "plan", "role":"view_plan"}?
+    - [what service]{"entity": "plan", "role":"view_plan"} do I have?
+    - I need a [new plan]{"entity": "plan", "role":"edit_plan"}
+    - [new plan]{"entity": "plan", "role":"edit_plan"}
+    - [new service]{"entity": "plan", "role":"edit_plan"}
+    - I'd like to [change my plan]{"entity": "plan", "role":"edit_plan"}
+    - [change plan]{"entity": "plan", "role":"edit_plan"}
+    - [change service]{"entity": "plan", "role":"edit_plan"}
+    - I'd like to [change my service]{"entity": "plan", "role":"edit_plan"}
 
 - intent: phone_maintenance
   examples: |
-    - [add phone]("entity": "phone", "role" "add_line") to plan
-    - [add phone]("entity": "phone", "role" "add_line")
-    - [additional phone]("entity": "phone", "role" "add_line")
-    - [add to plan]("entity": "phone", "role" "add_line")
-    - [new line]("entity": "phone", "role" "add_line")
-    - [additional line]("entity": "phone", "role" "add_line")
-    - [upgrade my phone]("entity": "phone", "role" "upgrade_existing")
-    - I need a [new phone]("entity": "phone", "role" "upgrade_existing")
-    - [new iPhone]("entity": "phone", "role" "upgrade_existing")
-    - I [lost my phone]("entity": "phone", "role" "upgrade_existing")
-    - [lost phone]("entity": "phone", "role" "upgrade_existing")
-    - I need a [newer phone]("entity": "phone", "role" "upgrade_existing")
-    - [updated phone]("entity": "phone", "role" "upgrade_existing")
-    - [update phone]("entity": "phone", "role" "upgrade_existing")
-    - [upgrade phone]("entity": "phone", "role" "upgrade_existing")
+    - [add phone]{"entity": "phone", "role":"add_line"} to plan
+    - [add phone]{"entity": "phone", "role":"add_line"}
+    - [additional phone]{"entity": "phone", "role":"add_line"}
+    - [add to plan]{"entity": "phone", "role":"add_line"}
+    - [new line]{"entity": "phone", "role":"add_line"}
+    - [additional line]{"entity": "phone", "role":"add_line"}
+    - [upgrade my phone]{"entity": "phone", "role":"upgrade_existing"}
+    - I need a [new phone]{"entity": "phone", "role":"upgrade_existing"}
+    - [new iPhone]{"entity": "phone", "role":"upgrade_existing"}
+    - I [lost my phone]{"entity": "phone", "role":"upgrade_existing"}
+    - [lost phone]{"entity": "phone", "role":"upgrade_existing"}
+    - I need a [newer phone]{"entity": "phone", "role":"upgrade_existing"}
+    - [updated phone]{"entity": "phone", "role":"upgrade_existing"}
+    - [update phone]{"entity": "phone", "role":"upgrade_existing"}
+    - [upgrade phone]{"entity": "phone", "role":"upgrade_existing"}
 
 - intent: change_info
   examples: |
-    - I [moved]("entity": "new_contact_info", "role" "address")
-    - I need to [change my address]("entity": "new_contact_info", "role" "address")
-    - [change address]("entity": "new_contact_info", "role" "address")
-    - [update my address]("entity": "new_contact_info", "role" "address")
-    - [update address]("entity": "new_contact_info", "role" "address")
-    - [wrong address]("entity": "new_contact_info", "role" "address")
-    - [not receiving bills]("entity": "new_contact_info", "role" "address")
-    - I'm [not receiving mail]("entity": "new_contact_info", "role" "address")
-    - I'm [not receiving bills]("entity": "new_contact_info", "role" "address")
-    - I'd like to [change my email]("entity": "new_contact_info", "role" "email")
-    - [change email]("entity": "new_contact_info", "role" "address")
-    - [change e-mail]("entity": "new_contact_info", "role" "address")
-    - I'd like to [change my e-mail]("entity": "new_contact_info", "role" "address")
-    - [new email]("entity": "new_contact_info", "role" "address")
-    - [new e-mail]("entity": "new_contact_info", "role" "address")
+    - I [moved]{"entity": "new_contact_info", "role":"address"}
+    - I need to [change my address]{"entity": "new_contact_info", "role":"address"}
+    - [change address]{"entity": "new_contact_info", "role":"address"}
+    - [update my address]{"entity": "new_contact_info", "role":"address"}
+    - [update address]{"entity": "new_contact_info", "role":"address"}
+    - [wrong address]{"entity": "new_contact_info", "role":"address"}
+    - [not receiving bills]{"entity": "new_contact_info", "role":"address"}
+    - I'm [not receiving mail]{"entity": "new_contact_info", "role":"address"}
+    - I'm [not receiving bills]{"entity": "new_contact_info", "role":"address"}
+    - I'd like to [change my email]{"entity": "new_contact_info", "role":"email"}
+    - [change email]{"entity": "new_contact_info", "role":"email"}
+    - [change e-mail]{"entity": "new_contact_info", "role":"email"}
+    - I'd like to [change my e-mail]{"entity": "new_contact_info", "role":"email"}
+    - [new email]{"entity": "new_contact_info", "role":"email"}
+    - [new e-mail]{"entity": "new_contact_info", "role":"email"}
 
 - intent: support
   examples: |
