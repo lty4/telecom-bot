@@ -11,15 +11,17 @@ intents:
   - phone_maintenance:
       use_entities: ["phone"]
   - change_info
-  - support
+  - support:
+      use_entities: ["phone"]
   - help
-  - inform_name
+  - inform
 
 entities:
   - plan
   - phone
   - new_contact_info
   - name
+  - location
 
 responses:
   utter_greet:

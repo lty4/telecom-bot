@@ -83,7 +83,6 @@ nlu:
     - [additional line]{"entity": "phone", "role":"add_line"}
     - [upgrade my phone]{"entity": "phone", "role":"upgrade_existing"}
     - I need a [new phone]{"entity": "phone", "role":"upgrade_existing"}
-    - [new iPhone]{"entity": "phone", "role":"upgrade_existing"}
     - I [lost my phone]{"entity": "phone", "role":"upgrade_existing"}
     - [lost phone]{"entity": "phone", "role":"upgrade_existing"}
     - I need a [newer phone]{"entity": "phone", "role":"upgrade_existing"}
@@ -139,7 +138,7 @@ nlu:
     - I want to talk to someone
     - supervisor
 
-- intent: inform_name
+- intent: inform
   examples: |
     - My name is [Laurence](name)
     - [Lauren](name)
@@ -148,3 +147,41 @@ nlu:
     - [Bob Dobalina](name)
     - [Bob Stephenson Jeff](name)
     - [Bob](name)
+    - [826 West 35th Place]{"entity":"location", "role":"street"}
+    - [715 WEST 37TH STREET]{"entity":"location", "role":"street"}
+    - [3442 SOUTH BELL AVENUE]{"entity":"location", "role":"street"}
+    - [3720 S NORMAL AVE]{"entity":"location", "role":"street"}
+    - [3032 S LYMAN ST]{"entity":"location", "role":"street"}
+    - [3623 S WINCHESTER AVE]{"entity":"location", "role":"street"}
+    - [1700 S LAFLIN ST]{"entity":"location", "role":"street"}
+    - [1165 W 25TH ST]{"entity":"location", "role":"street"}
+    - [814 W UNIVERSITY LN]{"entity":"location", "role":"street"}
+    - [4 High Street]{"entity":"location", "role":"street"}
+    - [Chicago, IL 60601]{"entity":"location", "role":"city"}
+    - [New York, NY 10104]{"entity":"location", "role":"city"}
+    - [Seattle, WA 98102]{"entity":"location", "role":"city"}
+    - [San Diego, CA 91945]{"entity":"location", "role":"city"}
+    - [London, EN]{"entity":"location", "role":"city"}
+    - [Berlin, DE]{"entity":"location", "role":"city"}
+    - [Madrid, ES]{"entity":"location", "role":"city"}
+    - [Mexico City, MX]{"entity":"location", "role":"city"}
+    - [Victoria, BC]{"entity":"location", "role":"city"}
+    - [Quebec City]{"entity":"location", "role":"city"}
+    - [iPhone]{"entity": "phone", "role":"support"}
+    - [Samsung]{"entity": "phone", "role":"support"}
+    - [Apple]{"entity": "phone", "role":"support"}
+    - [LG]{"entity": "phone", "role":"support"}
+    - [Note]{"entity": "phone", "role":"support"}
+    - [Huawei]{"entity": "phone", "role":"support"}
+    - [Pixel]{"entity": "phone", "role":"support"}
+    - [OnePlus]{"entity": "phone", "role":"support"}
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - good looking out
+    - appreciate it
+    - thanks for your time
+    - appreciate ya
+    - no thank you

@@ -16,7 +16,9 @@ stories:
   - intent: affirm
   - action: utter_happy
   - action: utter_anything_else
-  - intent: deny
+  - or:
+    - intent: deny
+    - intent: thanks
   - action: utter_goodbye
 
 - story: check plan, happy, something else
